@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>World Clock</title>
+    <script src="./main.js"></script>
+</head>
+<body>
+    <h1>World Clock</h1>
+    <br>
+    <h2>Get the current timestamp!</h2>
+    <br>
+    <label for ="time-zone">Choose your time zone:</label>
+    <select name="time-zone" id="time-zone">
+        <option value="est">Eastern Standard Time</option>
+        <option value="cet">Central Europe Standard Time</option>
+        <option value="pst">Pacific Standard Time</option>
+        <option value="utc">UTC</option>
+        <option value="mst">Mountain Standard Time</option>
+        <option value="ast">Atlantic Standard Time</option>
+        <option value="cast">Central America Standard Time</option>
+        <option value="esast">E. South America Standard Time</option>
+        <option value="cast">Central America Standard Time</option>
+    </select>
+    <button onclick="getCurrentTime()">Go</button>
+    <br>
+    <br>
+    <label id="loading">Loading...</label>
+</body>
+</html>
